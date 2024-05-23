@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:text="bill_smith83"
+            android:textSize="24sp"
+            android:layout_marginLeft="8dp"
+            android:drawableRight="@drawable/insta_down"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+
+
+        <ImageView
+            android:id="@+id/like_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_gravity="right"
+            android:src="@drawable/insta_add"
+            android:layout_marginLeft="150dp"/>
+
+        <ImageView
+            android:id="@+id/comment_button1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_gravity="fill_horizontal"
+            android:src="@drawable/insta_menu" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ssa"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/post" />
+
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill Smith"
+            android:layout_marginTop="170dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="he/him"
+            android:layout_marginTop="170dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Im a freelance photographer!"
+        android:layout_marginTop="190dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editpbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="1dp"
+            android:drawableLeft="@drawable/insta_add"
+            android:layout_marginRight="10dp"
+            android:id="@+id/addpbtn"/>
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:weightSum="2"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageButton-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_below="@+id/editpbtn"-->
+<!--            android:layout_marginTop="270dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@null"-->
+<!--            android:src="@drawable/insta_img" />-->
+
+<!--        <ImageButton-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="270dp"-->
+<!--            android:background="@null"-->
+<!--            android:src="@drawable/insta_img2" />-->
+<!--    </LinearLayout>-->
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/hropage"
+            android:background="@null"
+            android:src="@drawable/insta_home" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_serch" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_add" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_vid" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/plogo" />
+
+    </LinearLayout>
+
+</RelativeLayout>

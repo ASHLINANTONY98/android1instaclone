@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:scaleType="fitCenter"
+                        android:text="Instagram"
+                        android:textSize="24sp"
+                        android:drawableRight="@drawable/insta_down"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+
+
+                    <ImageView
+                        android:id="@+id/like_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_gravity="right"
+                        android:src="@drawable/like"
+                        android:layout_marginLeft="150dp"/>
+
+                    <ImageView
+                        android:id="@+id/comment_button1"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:scaleType="fitCenter"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_gravity="fill_horizontal"
+                        android:src="@drawable/msg" />
+
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/post"
+                            android:background="@drawable/circle"
+                            android:layout_marginTop="3dp"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/img2"
+                            android:background="@drawable/circle"
+                            android:layout_marginTop="3dp"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/circle"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/img3"
+                            android:layout_marginTop="3dp"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/img4"
+                            android:layout_marginTop="3dp"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:background="@drawable/circle"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/img5"
+                            android:layout_marginTop="3dp"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/circle"
+                            android:src="@drawable/img2"
+                            android:layout_marginTop="3dp"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+                <TextView
+                    android:id="@+id/post_owner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arun N M"
+                    android:drawableLeft="@drawable/plogo"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:src="@drawable/post"
+
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageButton
+                        android:id="@+id/like_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/like" />
+
+                    <ImageButton
+                        android:id="@+id/comment_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/comment" />
+
+                    <ImageButton
+                        android:id="@+id/send_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/send"
+                        android:layout_marginRight="150dp"/>
+
+                    <ImageButton
+                        android:id="@+id/save_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/save1" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/like_count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,234 likes"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/post_owner_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arya N M"
+                    android:drawableLeft="@drawable/plogo"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/post_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:src="@drawable/img4"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageButton
+                        android:id="@+id/like_button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/like" />
+
+                    <ImageButton
+                        android:id="@+id/comment_button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/comment" />
+
+                    <ImageButton
+                        android:id="@+id/send_button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_marginRight="150dp"
+                        android:src="@drawable/send" />
+
+                    <ImageButton
+                        android:id="@+id/save_button2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/save" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/like_count22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,234 likes"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/post_owner_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Athu N M"
+                    android:drawableLeft="@drawable/plogo"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/post_image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:src="@drawable/img3"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageButton
+                        android:id="@+id/like_button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/like" />
+
+                    <ImageButton
+                        android:id="@+id/comment_button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/comment" />
+
+                    <ImageButton
+                        android:id="@+id/send_button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/send"
+                        android:layout_marginRight="150dp"/>
+
+                    <ImageButton
+                        android:id="@+id/save_button3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/save1" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/like_count3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,600 likes"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/post_owner_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Madhu N M"
+                    android:drawableLeft="@drawable/plogo"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/post_image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:src="@drawable/img2"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageButton
+                        android:id="@+id/like_button4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/like" />
+
+                    <ImageButton
+                        android:id="@+id/comment_button4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/comment" />
+
+                    <ImageButton
+                        android:id="@+id/send_button4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/send"
+                        android:layout_marginRight="150dp"/>
+
+                    <ImageButton
+                        android:id="@+id/save_button4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/save1" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/like_count4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,600 likes"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/post_owner_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sira N M"
+                    android:drawableLeft="@drawable/plogo"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/post_image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:src="@drawable/img5"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageButton
+                        android:id="@+id/like_button5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/like" />
+
+                    <ImageButton
+                        android:id="@+id/comment_button5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/comment" />
+
+                    <ImageButton
+                        android:id="@+id/send_button5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/send"
+                        android:layout_marginRight="150dp"/>
+
+                    <ImageButton
+                        android:id="@+id/save_button5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/save1" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/like_count5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,600 likes"
+                    android:layout_marginTop="8dp" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5"
+        android:background="@android:color/white">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/hropage"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_home" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_serch" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_add" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/insta_vid" />
+
+        <ImageButton
+            android:id="@+id/propage"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/plogo" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
